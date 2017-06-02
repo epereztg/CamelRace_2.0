@@ -9,6 +9,7 @@ var rimraf = require('rimraf');
 var wiredep = require('wiredep').stream;
 var runSequence = require('run-sequence');
 
+
 var yeoman = {
   app: require('./bower.json').appPath || 'app',
   dist: 'dist'
