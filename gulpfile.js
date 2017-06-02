@@ -8,6 +8,7 @@ var lazypipe = require('lazypipe');
 var rimraf = require('rimraf');
 var wiredep = require('wiredep').stream;
 var runSequence = require('run-sequence');
+var concat = require('gulp-concat');
 
 
 var yeoman = {
@@ -202,23 +203,23 @@ gulp.task('copy:fonts', function() {
     .pipe(gulp.dest(yeoman.dist + '/fonts'));
 });
 
-gulp.task('build', ['clean:dist'], function() {
-  runSequence(['images', 'copy:extras', 'copy:fonts', 'client:build']);
-});
-
-gulp.task('default', ['build']);
-
-
 /*Custom tasks*/
-var concat = require('gulp-concat');
-
 gulp.task('scripts', function() {
   return gulp.src(
-      ['CamelRace/app/js/angular.js',
-        'CamelRace/app/js/app.module.js',
-        'CamelRace/app/graph/graph.component.js',
-        'CamelRace/app/bar-list/bar-list.component.js'
+      [yeoman.app + '/js/angular.js',
+        yeoman.app + '/js/app.module.js',
+        yeoman.app + '/graph/graph.component.js',
+        yeoman.app + '/bar-list/bar-list.component.js'
       ])
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('CamelRace/dist/'));
+    .pipe(gulp.dest(yeoman.dist));
 });
+
+
+gulp.task('build', ['clean:dist'], function() {
+  runSequence(['scripts', 'images', 'copy:extras', 'copy:fonts', 'client:build']);
+});
+//
+gulp.task('default', ['build']);
+
+// gulp.task('default', ['scripts']);

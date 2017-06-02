@@ -7,8 +7,8 @@
  * # MainCtrl
  * Controller of the camelRace20App
  */
-angular.module('camelRace20App')
-  .controller('MainCtrl', function () {
+angular.module('app')
+  .controller('MainCtrl', function() {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
