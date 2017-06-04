@@ -18,9 +18,9 @@ component("barList", {
       self.data = response.data;
     }); //htttpget
 
-    self.isActive = false;
-    self.activeButton = function() {
-      self.isActive = !self.isActive;
-    }
+    // self.isActive = false;
+    // self.activeButton = function() {
+    //   self.isActive = !self.isActive;
+    // }
   }] // Ctrl
 });

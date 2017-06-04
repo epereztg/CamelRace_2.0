@@ -41,7 +41,7 @@ body {
     width: 120px;
     background-color: #555;
     color: #fff;
-    text-align: center;        
+    text-align: center;
     border-radius: 6px;
     padding: 5px 0;
     position: absolute;
@@ -81,19 +81,28 @@ body {
     background: blue;
     position: absolute;
     bottom: 0;
-   
+
 }
 .bar-list-item {
     -webkit-animation-duration: 3s;
     -webkit-animation-name: slidein;
     -webkit-animation-iteration-count: 1;
-    
+
     /*animation-duration: 3s;
     animation-name: slidein;
     animation-iteration-count: 1;*/
-    
+
 
 }
+
+.bar-list-item[ui-sref]:hover {
+  display: inline-block;
+  cursor: pointer;
+  border: solid black 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .bar:nth-of-type(even) {
     background: CornflowerBlue;
 }
@@ -105,10 +114,10 @@ body {
     /*position: absolute;*/
     float: right;
     margin-top: -2px;
-    
+
 
 }
-.camel {    
+.camel {
     float: right;
 }
 .dot .right {
@@ -118,7 +127,7 @@ body {
     background: black;
     width: 0px;
     height: 10px;
-    border-radius: 50%;        
+    border-radius: 50%;
     margin-top: -2px;
-    
+
 }
