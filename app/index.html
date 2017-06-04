@@ -18,8 +18,9 @@
 
   <script src="js/angular.js"></script>
   <script src="js/angular-animate.js"></script>
-  <script src="js/app.module.js"></script>
+  <script src="js/angular-ui-router.min.js"></script>
 
+  <script src="js/app.module.js"></script>
   <script src="graph/graph.component.js"></script>
   <script src="bar-list/bar-list.component.js"></script>
 
@@ -37,56 +38,15 @@
   <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+<ui-view></ui-view>
 
-  <!-- Add your site or application content here -->
-  <div class="header">
-    <div class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
 
-          <a class="navbar-brand" href="#/">camelRace20</a>
-        </div>
-
-        <div class="collapse">
-
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#/">Home</a></li>
-            <li><a ng-href="#/about">About</a></li>
-            <li><a ng-href="#/">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <div class="tabs">
+      <a ui-sref="tab1" ui-sref-active="activeTab">Tab 1</a>
+      <a ui-sref="tab2" ui-sref-active="activeTab">Tab 2</a>
+      <!-- <button ui-sref="tab2">Tab 2</button> -->
   </div>
 
-  <!-- <div class="container">
-    <div ng-view=""></div>
-  </div>
-
-  <div class="footer">
-    <div class="container">
-      <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-    </div>
-  </div> -->
-
-
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-  <!-- <script>
-    ! function(A, n, g, u, l, a, r) {
-      A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
-          (A[l].q = A[l].q || []).push(arguments)
-        }, A[l].l = +new Date, a = n.createElement(g),
-        r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
-    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-  </script> -->
-
-  <!-- build:js(.) scripts/vendor.js -->
-  <!-- bower:js -->
-  <!-- endbower -->
-  <!-- endbuild -->
 
   <!-- build:js({.tmp,app}) scripts/scripts.js -->
   <script src="scripts/app.js"></script>
