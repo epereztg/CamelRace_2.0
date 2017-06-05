@@ -36,16 +36,21 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       controller: 'ItemDetailController as itemDetail',
       resolve: {
         item: ['$stateParams', //'TaskService',
-          //function($stateParams, TaskService) {
-          function($stateParams) {
+          function($stateParams, TaskService) {
+
             // debugger;
-            // console.log(TaskService.list());
+            //console.log(TaskService.list());
             // return TaskService.list()
             //   .then(function(items) {
             //     //return items[$stateParams.itemId];
             //     return TaskService.find($stateParams.itemId);
             //   });
-            return $stateParams.itemId;
+
+            // TaskService.list(function(countries) {
+            //   $scope.countries = countries;
+            // });
+
+            //return $stateParams.itemId;
           }
         ]
       }
