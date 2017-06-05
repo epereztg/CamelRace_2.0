@@ -1,12 +1,11 @@
-﻿
 <div ng-repeat="bar in $ctrl.data" class="bar bar-list-item" style="height:{{$ctrl.width / $ctrl.data.length - 45}}px;width:{{bar.current /  $ctrl.max * $ctrl.width}}px; top:{{$index / $ctrl.data.length * $ctrl.width}}px;">
-    <a class="label" align="left" ui-sref="itemDetail({itemId: $index})">{{bar.label}}</a>
-    <!--<a align="left">{{$ctrl.width}}__{{$ctrl.height}}__{{$ctrl.max}}__widht: {{bar.current /  $ctrl.max * $ctrl.height}}__</a>-->
-    <div class="camel right tooltip">
-        <!--<span class="tooltiptext">{{(bar.current/bar.total}}%</span>-->
-        <img ng-src={{$ctrl.image}} height="42" width="42" />
+  <a class="label" align="left" ui-sref="itemDetail({itemId: $index})">{{bar.label}}</a>
+  <!--<a align="left">{{$ctrl.width}}__{{$ctrl.height}}__{{$ctrl.max}}__widht: {{bar.current /  $ctrl.max * $ctrl.height}}__</a>-->
+  <div class="camel right tooltip">
+    <!--<span class="tooltiptext">{{(bar.current/bar.total}}%</span>-->
+    <img ng-src={{$ctrl.image}} height="42" width="42" />
 
-    </div>
-    <!--Milestones-->
-    <!--<div class="milestone tooltip" ng-repeat="mls in bar.milestones" style="margin-left: {{mls.complete /  $ctrl.max * $ctrl.height}}px;">*<span class="tooltiptext">{{mls.complete}} ({{bar.label}})}}</span></div>-->
+  </div>
+  <!--Milestones-->
+  <!--<div class="milestone tooltip" ng-repeat="mls in bar.milestones" style="margin-left: {{mls.complete /  $ctrl.max * $ctrl.height}}px;">*<span class="tooltiptext">{{mls.complete}} ({{bar.label}})}}</span></div>-->
 </div>

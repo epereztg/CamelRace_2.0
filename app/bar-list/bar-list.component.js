@@ -16,6 +16,7 @@ component("barList", {
     self.image = '../images/walkingCamel.gif';
     $http.get('tasks/tasks.json').then(function(response) {
       self.data = response.data;
+      self.items = response.data;
     }); //htttpget
 
     // self.isActive = false;
