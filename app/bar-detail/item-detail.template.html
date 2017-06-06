@@ -1,8 +1,14 @@
 <!-- <a ui-sref="home">Home</a> &lt;
 <a ui-sref="mainList">List</a> &lt; -->
 
-<span> {{itemDetail.label}} </span>
-<span> {{itemDetail.total}} </span>
+<!-- <span> {{itemDetail.label}} </span>
+<span> {{itemDetail.total}} </span> -->
+
+
+<label for="label">{{itemDetail.label}} <input type="text" id="label"/></label><button ng-click="saveLabel()">saveLabel</button>
+</br>
+<label for="total">{{itemDetail.total}}  <input type="text" id="total"/></label><button ng-click="saveTotal()">saveTotal</button>
+
 <!-- TBD: Detail view for <span>{{$ctrl.itemId}}</span>
 <span> {{ itemDetail.label }} </span>
 <div>Item name: {{ itemDetail.name }}</div>
