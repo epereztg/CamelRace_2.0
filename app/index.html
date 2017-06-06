@@ -19,7 +19,6 @@
   <script src="js/angular.js"></script>
   <script src="js/angular-animate.js"></script>
   <script src="js/angular-ui-router.min.js"></script>
-
   <script src="js/app.module.js"></script>
   <script src="graph/graph.component.js"></script>
   <script src="bar-list/bar-list.component.js"></script>
@@ -31,30 +30,19 @@
   <link rel="stylesheet" href="styles/main.scss">
   <link rel="stylesheet" href="styles/app.css" />
   <link rel="stylesheet" href="styles/app.animation.css" />
-  <!-- endbuild -->
+
 </head>
 
 <body ng-app="app">
-  <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-  <ui-view>
-  </ui-view>
-
 
   <div class="tabs">
     <a ui-sref="tab1" ui-sref-active="activeTab">Tab 1</a>
     <a ui-sref="tab2" ui-sref-active="activeTab">Tab 2</a>
-    <!-- <button ui-sref="tab2">Tab 2</button> -->
+    <a ui-sref="home" ui-sref-active="activeTab">Home</a>
   </div>
 
+  <ui-view></ui-view>
 
-  <!-- build:js({.tmp,app}) scripts/scripts.js -->
-  <!-- <script src="scripts/app.js"></script> -->
-  <!-- <script src="scripts/controllers/main.js"></script>
-  <script src="scripts/controllers/about.js"></script> -->
-  <graph></graph>
-  <!-- endbuild -->
 </body>
 
 </html>

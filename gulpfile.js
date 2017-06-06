@@ -207,6 +207,9 @@ gulp.task('copy:fonts', function() {
 gulp.task('scripts', function() {
   return gulp.src(
       [yeoman.app + '/js/angular.js',
+        yeoman.app + '/js/angular-animate.js',
+        yeoman.app + '/js/angular-ui-router.min.js',
+        yeoman.app + '/js/item-detail.component.js',
         yeoman.app + '/js/app.module.js',
         yeoman.app + '/graph/graph.component.js',
         yeoman.app + '/bar-list/bar-list.component.js'

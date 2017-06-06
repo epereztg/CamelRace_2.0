@@ -16,6 +16,12 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 
   // Set up UI states
   $stateProvider
+    .state('home', {
+      url: '/',
+      templateUrl: 'home/home.template.html'
+    })
+
+
     .state('tab1', {
       url: '/tab1',
       templateUrl: '../tab1.html'
@@ -31,15 +37,20 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       templateUrl: 'bar-detail/item-detail.template.html',
       controller: 'ItemDetailController as itemDetail',
       resolve: {
-        item: ['$stateParams', //, 'TaskService',
-          function($stateParams) { //, TaskService) {
+        item: ['$stateParams', 'TasksService',
+          function($stateParams, TasksService) {
             //var aux = TaskService.list();
             // debugger;
-            console.log($stateParams.itemId);
-            //console.log(TaskService.list());
-            //debugger;
-            //return TaskService.find($stateParams.itemId);
-            return $stateParams.itemId;
+            // console.log('$stateParams.itemId: ' + $stateParams.itemId);
+            // console.log('fakeJson().length: ' + TasksService.fakeJson().length);
+            // console.log(TasksService.fakeJson()[0].label);
+            // console.log(TasksService.fakeJson()[1].label);
+            //return TasksService.fakeJson()[$stateParams.itemId].label;
+
+            console.log(TasksService.findInfakeJson($stateParams.itemId).label);
+            return TasksService.findInfakeJson($stateParams.itemId);
+            //return TasksService.find($stateParams.itemId);
+
           }
         ]
       }

@@ -44,6 +44,9 @@ app.factory('TasksService', function($http) {
       ];
       return jsnFile;
     },
+    findInfakeJson: function(id) {
+      return this.fakeJson()[id];
+    },
 
     trueJson: function() {
       // var jsonFile = null;

@@ -11,8 +11,8 @@
 
     var itemDetail = this;
     itemDetail.name = item;
-    // itemDetail.name = item.name;
-    // itemDetail.quantity = item.quantity;
+    itemDetail.label = item.label;
+    itemDetail.total = item.total;
     // itemDetail.description = item.description;
   }
 
