@@ -27,11 +27,11 @@ app.factory('TasksService', function($http) {
     },
 
     trueJson: function() {
-      // var jsonFile = null;
-      // $http.get('tasks/tasks.json').then(function(response) {
-      //   jsonFile = response;
-      // });
-      // return jsonFile;
+      var jsonFile = null;
+      $http.get('tasks/tasks.json').then(function(response) {
+        jsonFile = response.data;
+      });
+      return jsonFile;
       //$http.get('https://gist.githubusercontent.com/idhamperdameian/239cc5a4dbba4488575d/raw/0a2ea4c6c120c9a8f02c85afcf7a31941ef74d3a/ptis.json').
     }
   }

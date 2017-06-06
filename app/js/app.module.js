@@ -47,6 +47,9 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
             // console.log(TasksService.fakeJson()[1].label);
             //return TasksService.fakeJson()[$stateParams.itemId].label;
 
+
+            //show output with json file: it does not work!!
+            // console.log('trueJson().length:' + TasksService.trueJson());
             console.log(TasksService.findInfakeJson($stateParams.itemId).label);
             return TasksService.findInfakeJson($stateParams.itemId);
             //return TasksService.find($stateParams.itemId);
