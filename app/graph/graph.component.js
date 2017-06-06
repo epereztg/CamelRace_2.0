@@ -7,11 +7,13 @@ module("app").
 component("graph", {
   templateUrl: 'graph/graph.template.html',
 
-  controller: ['$http', function graphController($http) {
+  controller: ['$http', 'TasksService', function graphController($http, TasksService) {
     var self = this;
     $http.get('tasks/tasks.json').then(function(response) {
       //self.tasks = response.data;
-      self.data = response.data;
+      //self.data = response.data;
+      self.data = TasksService.fakeJson();
+
 
       self.width = 600;
       self.height = 600;

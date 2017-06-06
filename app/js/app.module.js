@@ -25,35 +25,28 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       url: '/tab2',
       templateUrl: '../tab2.html'
     })
-    // .state('items', {
-    //                 url: 'items',
-    //                 templateUrl: 'Scripts/templates/manageProducts/products.list.html',
-    //                 controller: 'productListCtrl'
-    //             })
+
     .state('itemDetail', {
       url: '/item-detail/{itemId}',
       templateUrl: 'bar-detail/item-detail.template.html',
       controller: 'ItemDetailController as itemDetail',
       resolve: {
-        item: ['$stateParams', //'TaskService',
-          function($stateParams, TaskService) {
-
+        item: ['$stateParams', //, 'TaskService',
+          function($stateParams) { //, TaskService) {
+            //var aux = TaskService.list();
             // debugger;
+            console.log($stateParams.itemId);
             //console.log(TaskService.list());
-            // return TaskService.list()
-            //   .then(function(items) {
-            //     //return items[$stateParams.itemId];
-            //     return TaskService.find($stateParams.itemId);
-            //   });
-
-            // TaskService.list(function(countries) {
-            //   $scope.countries = countries;
-            // });
-
-            //return $stateParams.itemId;
+            //debugger;
+            //return TaskService.find($stateParams.itemId);
+            return $stateParams.itemId;
           }
         ]
       }
+      // item: [function(TasksService, $stateParams) {
+      //   return TaskService.find($stateParams.id);
+      // }]
+
       //]
 
     });
