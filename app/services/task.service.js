@@ -33,8 +33,8 @@ app.factory('TasksService', function($http, $q) {
         throw 'There was an error getting data';
       });
     },
-    findinlist: function(id) {
-      return this.findinlist()[id];
+    findIntrueJson: function(id) {
+      return this.trueJson()[id];
     },
     trueJson: function() {
       var defered = $q.defer();

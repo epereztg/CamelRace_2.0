@@ -16,30 +16,9 @@
     itemDetail.total = item.total;
     itemDetail.current = item.current;
 
-    itemDetail.name = item.name;
-    itemDetail.quantity = item.quantity;
-    itemDetail.description = item.description;
+    // itemDetail.name = item.name;
+    // itemDetail.quantity = item.quantity;
+    // itemDetail.description = item.description;
 
   }
 })();
-
-// "use strict";
-// // Register `phoneDetail` component, along with its associated controller and template
-// angular.module("app").
-// component("itemDetail", {
-//   //templateUrl: 'phone-detail/phone-detail.template.html',
-//   controller:
-//     function ItemDetailController(item) {
-//       var itemDetail = this;
-//       //itemDetail.name = item;
-//       itemDetail.label = item.label;
-//       itemDetail.total = item.total;
-//       itemDetail.current = item.current;
-//
-//       itemDetail.name = item.name;
-//       itemDetail.quantity = item.quantity;
-//       itemDetail.description = item.description;
-//
-//     }
-//   ]
-// });

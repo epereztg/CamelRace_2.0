@@ -10,8 +10,6 @@ component("graph", {
   controller: ['$http', 'TasksService', function graphController($http, TasksService) {
     var self = this;
     $http.get('tasks/tasks.json').then(function(response) {
-      //self.tasks = response.data;
-      //self.data = response.data;
       self.data = TasksService.fakeJson();
       //self.data = this.phones = Phone.query();
 
