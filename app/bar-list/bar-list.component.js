@@ -15,16 +15,5 @@ component("barList", {
   controller: ['$http', function barListController($http) {
     var self = this;
     self.image = '../images/walkingCamel.gif';
-    // $http.get('tasks/tasks.json').then(function(response) {
-    //   self.data = response.data;
-    //   self.items = response.data;
-    // }); //htttpget
-
-    // self.data = TaskService.list();
-
-    // self.isActive = false;
-    // self.activeButton = function() {
-    //   self.isActive = !self.isActive;
-    // }
-  }] // Ctrl
+  }]
 });
