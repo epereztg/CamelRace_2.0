@@ -34,7 +34,7 @@ app.factory('TasksService', function($http, $q) {
       });
     },
     findIntrueJson: function(id) {
-      return this.trueJson()[id];
+      return this.getList()[id];
     },
     trueJson: function() {
       var defered = $q.defer();
