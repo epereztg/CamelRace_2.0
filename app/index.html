@@ -15,11 +15,10 @@
   <script src="graph/graph.component.js"></script>
   <script src="bar-list/bar-list.component.js"></script>
   <script src="bar-detail/item-detail.component.js"></script>
-  <!-- <script src="dist/all.js"></script> -->
+  <!-- <script src="../dist/all.js"></script> -->
 
   <!-- Services -->
   <script src="services/task.service.js"></script>
-  <script src="services/shoppinglist.service.js"></script>
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles/main.scss">
@@ -30,8 +29,6 @@
 
 <body ng-app="app">
   <div class="tabs">
-    <a ui-sref="tab1" ui-sref-active="activeTab">Tab 1</a>
-    <a ui-sref="tab2" ui-sref-active="activeTab">Tab 2</a>
     <a ui-sref="home" ui-sref-active="activeTab">Home</a>
   </div>
   <ui-view></ui-view>

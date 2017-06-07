@@ -209,10 +209,11 @@ gulp.task('scripts', function() {
       [yeoman.app + '/js/angular.js',
         yeoman.app + '/js/angular-animate.js',
         yeoman.app + '/js/angular-ui-router.min.js',
-        yeoman.app + '/js/item-detail.component.js',
         yeoman.app + '/js/app.module.js',
+
         yeoman.app + '/graph/graph.component.js',
-        yeoman.app + '/bar-list/bar-list.component.js'
+        yeoman.app + '/bar-list/bar-list.component.js',
+        yeoman.app + '/bar-detail/item-detail.component.js'
       ])
     .pipe(concat('all.js'))
     .pipe(gulp.dest(yeoman.dist));
