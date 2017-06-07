@@ -1,4 +1,6 @@
-﻿'use strict';
+﻿
+'use strict';
 
 // Define the `barList` module
-angular.module('graph', []);
+// angular.module('graph', ['core.phone']);
+angular.module('graph');

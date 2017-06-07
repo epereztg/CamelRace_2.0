@@ -13,6 +13,7 @@ component("graph", {
       //self.tasks = response.data;
       //self.data = response.data;
       self.data = TasksService.fakeJson();
+      //self.data = this.phones = Phone.query();
 
 
       self.width = 600;

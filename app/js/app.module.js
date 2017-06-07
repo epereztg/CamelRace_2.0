@@ -39,29 +39,39 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       resolve: {
         item: ['$stateParams', 'TasksService',
           function($stateParams, TasksService) {
-            //var aux = TaskService.list();
-            // debugger;
-            // console.log('$stateParams.itemId: ' + $stateParams.itemId);
-            // console.log('fakeJson().length: ' + TasksService.fakeJson().length);
-            // console.log(TasksService.fakeJson()[0].label);
-            // console.log(TasksService.fakeJson()[1].label);
-            //return TasksService.fakeJson()[$stateParams.itemId].label;
+            var items;
+            //show output with json file: it does not work!!https://carlosazaustre.es/blog/uso-de-promesas-en-angularjs/
+            // TasksService.trueJson()
+            //   .then(function(data) {
+            //     items = data;
+            //   }));
 
-
-            //show output with json file: it does not work!!
-            // console.log('trueJson().length:' + TasksService.trueJson());
-            console.log(TasksService.findInfakeJson($stateParams.itemId).label);
+            //return TasksService.findinlist($stateParams.itemId);
+            //return TasksService.trueJson()[$stateParams.itemId];
             return TasksService.findInfakeJson($stateParams.itemId);
-            //return TasksService.find($stateParams.itemId);
-
           }
         ]
       }
-      // item: [function(TasksService, $stateParams) {
-      //   return TaskService.find($stateParams.id);
-      // }]
+    })
 
-      //]
+  // //Example with shopping list
+  // .state('itemDetail', {
+  //   url: '/item-detail/{itemId}',
+  //   templateUrl: 'bar-detail/item-detail.template.html',
+  //   controller: 'ItemDetailController as itemDetail',
+  //   resolve: {
+  //     item: ['$stateParams', 'ShoppingListService',
+  //       function($stateParams, ShoppingListService) {
+  //         return ShoppingListService.getItems()
+  //           .then(function(items) {
+  //             return items[$stateParams.itemId];
+  //           });
+  //       }
+  //     ]
+  //   }
+  // })
 
-    });
+
+
+  ;
 }

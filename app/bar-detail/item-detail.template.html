@@ -4,13 +4,16 @@
 <!-- <span> {{itemDetail.label}} </span>
 <span> {{itemDetail.total}} </span> -->
 
-
 <label for="label">{{itemDetail.label}} <input type="text" id="label"/></label><button ng-click="saveLabel()">saveLabel</button>
 </br>
 <label for="total">{{itemDetail.total}}  <input type="text" id="total"/></label><button ng-click="saveTotal()">saveTotal</button>
+</br>
+<label for="label">{{itemDetail.current}} <input type="text" id="current"/></label><button ng-click="saveCurrent()">saveCurrent</button> TBD: Detail view for <span>{{$ctrl.itemId}}</span>
+</br>
+<button ui-sref="home">Home</button>
+<a onclick="history.back()">Back</a>
 
-<!-- TBD: Detail view for <span>{{$ctrl.itemId}}</span>
-<span> {{ itemDetail.label }} </span>
-<div>Item name: {{ itemDetail.name }}</div>
+
+<!-- <div>Item name: {{ itemDetail.name }}</div>
 <div>Item quantity: {{ itemDetail.quantity }}</div>
 <div>Item description: {{ itemDetail.description }}</div> -->
