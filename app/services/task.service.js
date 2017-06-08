@@ -1,6 +1,6 @@
-var app = angular.module('app');
+var service = angular.module('core.services');
 
-app.factory('TasksService', function($http, $q) {
+service.factory('TasksService', function($http) {
   return {
     getList: function() {
       return $http.get('tasks/tasks.json').then(function(response) {

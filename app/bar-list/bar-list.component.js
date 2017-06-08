@@ -3,7 +3,7 @@
 
 // Register `barList` component, along with its associated controller and template
 angular.
-module("app").
+module("core.components").
 component("barList", {
   bindings: {
     width: '=',

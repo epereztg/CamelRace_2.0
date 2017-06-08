@@ -3,7 +3,7 @@
 
 // Register `graph` component, along with its associated controller and template
 angular.
-module("app").
+module("core.components").
 component("graph", {
   bindings: {
     width: '=',
@@ -16,9 +16,11 @@ component("graph", {
 
   controller: ['$http', 'TasksService', function graphController($http, TasksService) {
     var self = this;
+
     $http.get('tasks/tasks.json').then(function(response) {
       TasksService.getList()
         .then(function(data) {
+
           self.data = data;
           // self.width = 600;
           // self.height = 600;

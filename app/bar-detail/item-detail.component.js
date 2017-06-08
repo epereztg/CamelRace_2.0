@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('app')
+  angular.module('core.components')
     //angular.module('itemDetail')
     .controller('ItemDetailController', ItemDetailController);
 

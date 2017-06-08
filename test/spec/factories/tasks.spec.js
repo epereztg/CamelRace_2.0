@@ -32,7 +32,7 @@
 describe('service under test', function() {
   var myService = null;
 
-  beforeEach(module('app'));
+  beforeEach(module('core.services'));
   //
   beforeEach(inject(function(_TasksService_) {
     myService = _TasksService_;

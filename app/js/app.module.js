@@ -1,13 +1,13 @@
 'use strict';
 
 // Define the `app` module
-angular.module('app', ['ui.router']);
+//angular.module('app', ['ui.router']);
 
 
 angular.module('app', [
     'ui.router',
-    // 'core.components',
-    // 'core.services'
+    'core.components',
+    'core.services'
   ])
   .config(RoutesConfig);
 
