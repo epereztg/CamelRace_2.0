@@ -4,7 +4,11 @@
 angular.module('app', ['ui.router']);
 
 
-angular.module('app')
+angular.module('app', [
+    'ui.router',
+    // 'core.components',
+    // 'core.services'
+  ])
   .config(RoutesConfig);
 
 RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
