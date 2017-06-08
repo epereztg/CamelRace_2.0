@@ -15,10 +15,12 @@
     itemDetail.label = item.label;
     itemDetail.total = item.total;
     itemDetail.current = item.current;
+  };
+  // self.setImage = function setImage(imageUrl) {
+  self.setImage = function setImage() {
+    self.mainImageUrl = "images/walkingCamel.gif";
+  };
 
-    // itemDetail.name = item.name;
-    // itemDetail.quantity = item.quantity;
-    // itemDetail.description = item.description;
 
-  }
+
 })();

@@ -3,52 +3,56 @@
     "label": "Task1",
     "total": 70,
     "current": 20,
+    "imageUrl": "images/walkingCamel.gif",
     "milestones":
     [
       { "date": "20170503", "complete": "5" },
       { "date": "20170503", "complete": "15" },
       { "date": "20170503", "complete": "25" },
       { "date": "20170503", "complete": "35" },
-      { "date": "20170503", "complete": "12" }            
+      { "date": "20170503", "complete": "12" }
     ]
   },
   {
     "label": "Task2",
     "total": 94,
     "current": 10,
+    "imageUrl": "images/yeoman.png",
     "milestones":
     [
       { "date": "20170503", "complete": "2" },
       { "date": "20170503", "complete": "4" },
       { "date": "20170503", "complete": "6" },
       { "date": "20170503", "complete": "8" },
-      { "date": "20170503", "complete": "40" }              
+      { "date": "20170503", "complete": "40" }
     ]
   },
   {
     "label": "Task3",
     "total": 62,
     "current": 50,
+    "imageUrl": "images/walkingCamel.gif",
     "milestones":
     [
       { "date": "20170503", "complete": "5" },
       { "date": "20170503", "complete": "15" },
       { "date": "20170503", "complete": "25" },
       { "date": "20170503", "complete": "35" },
-      { "date": "20170503", "complete": "45" }       
+      { "date": "20170503", "complete": "45" }
     ]
   },
   {
     "label": "Task4",
     "total": 182,
     "current": 160,
+    "imageUrl": "images/yeoman.png",
     "milestones":
     [
       { "date": "20170503", "complete": "2" },
       { "date": "20170503", "complete": "4" },
       { "date": "20170503", "complete": "6" },
       { "date": "20170503", "complete": "8" },
-      { "date": "20170503", "complete": "10" }              
+      { "date": "20170503", "complete": "10" }
     ]
   },
   {
@@ -61,7 +65,7 @@
       { "date": "20170503", "complete": "4" },
       { "date": "20170503", "complete": "6" },
       { "date": "20170503", "complete": "8" },
-      { "date": "20170503", "complete": "10" }              
+      { "date": "20170503", "complete": "10" }
     ]
   },
   {
@@ -74,7 +78,7 @@
       { "date": "20170503", "complete": "4" },
       { "date": "20170503", "complete": "6" },
       { "date": "20170503", "complete": "8" },
-      { "date": "20170503", "complete": "10" }              
+      { "date": "20170503", "complete": "10" }
     ]
   },
   {
@@ -87,7 +91,7 @@
       { "date": "20170503", "complete": "4" },
       { "date": "20170503", "complete": "6" },
       { "date": "20170503", "complete": "8" },
-      { "date": "20170503", "complete": "10" }              
+      { "date": "20170503", "complete": "10" }
     ]
   },
   {
@@ -100,7 +104,7 @@
       { "date": "20170503", "complete": "4" },
       { "date": "20170503", "complete": "6" },
       { "date": "20170503", "complete": "8" },
-      { "date": "20170503", "complete": "10" }              
+      { "date": "20170503", "complete": "10" }
     ]
   },
   {
@@ -113,7 +117,7 @@
       { "date": "20170503", "complete": "4" },
       { "date": "20170503", "complete": "6" },
       { "date": "20170503", "complete": "8" },
-      { "date": "20170503", "complete": "10" }              
+      { "date": "20170503", "complete": "10" }
     ]
   },
   {
@@ -126,7 +130,7 @@
       { "date": "20170503", "complete": "4" },
       { "date": "20170503", "complete": "6" },
       { "date": "20170503", "complete": "8" },
-      { "date": "20170503", "complete": "10" }              
+      { "date": "20170503", "complete": "10" }
     ]
   },
   {
@@ -139,7 +143,7 @@
       { "date": "20170503", "complete": "4" },
       { "date": "20170503", "complete": "6" },
       { "date": "20170503", "complete": "8" },
-      { "date": "20170503", "complete": "10" }              
+      { "date": "20170503", "complete": "10" }
     ]
   },
   {
@@ -152,7 +156,7 @@
       { "date": "20170503", "complete": "4" },
       { "date": "20170503", "complete": "6" },
       { "date": "20170503", "complete": "8" },
-      { "date": "20170503", "complete": "10" }              
+      { "date": "20170503", "complete": "10" }
     ]
   }
 ]
