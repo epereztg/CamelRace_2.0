@@ -15,12 +15,16 @@
     itemDetail.label = item.label;
     itemDetail.total = item.total;
     itemDetail.current = item.current;
+
+    // save(): function() {
+    //   console.log("Hi");
+    // };
   };
   // self.setImage = function setImage(imageUrl) {
-  // self.setImage = function setImage() {
-  //   self.mainImageUrl = "images/walkingCamel.gif";
-  // };
-
-
-
+  //   // self.setImage = function setImage() {
+  //   //   self.mainImageUrl = "images/walkingCamel.gif";
+  //   // };
+  //   console.log("Hi");
+  //
+  //
 })();
