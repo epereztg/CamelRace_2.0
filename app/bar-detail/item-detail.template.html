@@ -1,6 +1,6 @@
  //TBD: Detail view for <span>{{$ctrl.itemId}}</span>
 
-<label for="label">{{itemDetail.label}} <input type="text" id="label"/></label>
+<!-- <label for="label">{{itemDetail.label}} <input type="text" id="label"/></label>
 <button ng-click="saveLabel()">saveLabel</button>
 </br>
 <label for="total">{{itemDetail.total}}  <input type="text" id="total"/></label><button ng-click="saveTotal()">saveTotal</button>
@@ -8,13 +8,21 @@
 <label for="label">{{itemDetail.current}} <input type="text" id="current"/></label><button ng-click="saveCurrent()">saveCurrent</button>
 </br>
 <button ui-sref="home">Home</button>
-<!-- <button ng-click="count = count + 1" ng-init="count=0">+1</button> <p>The button has been clicked {{count}} times.</p>-->
 <button ng-click="$ctrl.setImage()">Camello</button>
-<img ng-src="{{$ctrl.mainImageUrl}}" />
+<img ng-src="{{$ctrl.mainImageUrl}}" /> -->
 
+<div class="container">
+  <!-- <h2> Add Samples </h2>
+	{{ samples.length }} -->
+  <br /> Label: <br />
+  <input type="text" ng-model={{itemDetail.label}} />
+  <br /> Total: <br />
+  <input type="text" ng-model={{itemDetail.total}} />
+  <br /> Current: <br />
+  <input type="text" ng-model={{itemDetail.current}} />
+  <br />
 
+  <button ng-click="addSamples()">Add New</button>
+  <br />
 
-
-<!-- <div>Item name: {{ itemDetail.name }}</div>
-<div>Item quantity: {{ itemDetail.quantity }}</div>
-<div>Item description: {{ itemDetail.description }}</div> -->
+</div>

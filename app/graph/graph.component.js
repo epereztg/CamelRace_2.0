@@ -1,7 +1,6 @@
 ﻿
 "use strict";
 
-// Register `graph` component, along with its associated controller and template
 angular.
 module("core.components").
 component("graph", {
@@ -20,25 +19,35 @@ component("graph", {
     $http.get('tasks/tasks.json').then(function(response) {
       TasksService.getList()
         .then(function(data) {
+          //console.log(JSON.stringify(data));
+          var aux = JSON.parse(JSON.stringify(data));
+          //var aux = JSON.stringify(data);
 
+          //Testing how to modify json
+          aux[0].label = "TaskModified";
+          console.log(aux[0].label);
+          //debugger
+          self.data = aux; //JSON.stringify(aux);
+          ///
           self.data = data;
-          // self.width = 600;
-          // self.height = 600;
-          // self.yAxis = "Ongoing Tasks";
-          // self.xAxis = "Race!";
           self.max = 0;
           var arrLength = self.data.length;
+
 
           // "Arrow functions" are not supported by PhantomJS 2.x
           // PhantomJS only supports a small subset of ES6.
           // https://stackoverflow.com/questions/39026881/unexpected-token-using-array-some-with-karma-and-phantomjs
           // self.max = data.reduce((acc, task) => acc >= task.total ? acc : task.total, 0)
           var arrLength = self.data.length;
+          console.log("datalenght: " + self.data.length);
           for (var i = 0; i < arrLength; i++) {
             // Find Maximum X Axis Value
             if (self.data[i].total > self.max)
               self.max = self.data[i].total;
+            console.log("max: " + self.max);
           }
+
+          //console.log("max: " + self.max);
         });
 
     });

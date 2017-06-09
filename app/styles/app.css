@@ -119,6 +119,7 @@ body {
 }
 .camel {
     float: right;
+    position: relative;
 }
 .dot .right {
     float:right;
@@ -129,5 +130,34 @@ body {
     height: 10px;
     border-radius: 50%;
     margin-top: -2px;
-
 }
+
+/* Put your css in here */
+
+
+html {
+}
+	.row {
+		margin-top: .5%;
+		margin-left: 5%;
+	}
+	.span3 {
+		background-color: #CC0000;
+		color: #fff;
+		text-align: center;
+		font-family: "Open Sans";
+		font-size: 1em;
+		font-weight: 100;
+		width: 15%;
+		height: 40px;
+	}
+		.span3 p {
+			background-color: #CC0000;
+			margin-top: 5%;
+		}
+	.searchBox {
+		font-family: "Open Sans";
+		font-size: 1.5em;
+		font-weight: 300;
+
+	}
