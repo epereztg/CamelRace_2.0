@@ -15,7 +15,6 @@ component("graph", {
 
   controller: ['$http', 'TasksService', function graphController($http, TasksService) {
     var self = this;
-debugger;
     $http.get('tasks/tasks.json').then(function(response) {
       TasksService.getList()
         .then(function(data) {
