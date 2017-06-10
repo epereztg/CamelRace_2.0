@@ -7,15 +7,15 @@ component("graph", {
   bindings: {
     width: '=',
     height: '=',
-    yAxis: '=',
-    xAxis: '='
+     yAxis:  '@',
+  xAxis: '@'
   },
 
   templateUrl: 'graph/graph.template.html',
 
   controller: ['$http', 'TasksService', function graphController($http, TasksService) {
     var self = this;
-
+debugger;
     $http.get('tasks/tasks.json').then(function(response) {
       TasksService.getList()
         .then(function(data) {
