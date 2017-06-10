@@ -70,27 +70,24 @@ body {
 }
 
 .label {
-    /*color: white;*/
-    /*opacity: 1;
-    padding-top: 2px;*/
     position: absolute;
     margin-top: -20px;
 }
 
 .bar {
-    background: blue;
+    /*background: blue;*/
     position: absolute;
     bottom: 0;
 
 }
 .bar-list-item {
-    -webkit-animation-duration: 3s;
+    /*-webkit-animation-duration: 3s;
     -webkit-animation-name: slidein;
-    -webkit-animation-iteration-count: 1;
-
-    /*animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;*/
+background: blue;
+    animation-duration: 3s;
     animation-name: slidein;
-    animation-iteration-count: 1;*/
+    animation-iteration-count: 1;
 
 
 }
@@ -103,9 +100,16 @@ body {
   padding-right: 5px;
 }
 
-.bar:nth-of-type(even) {
+/*.bar:nth-of-type(even) {
     background: CornflowerBlue;
+}*/
+
+.bar.camel{
+  background: none;
+  margin-top: -40px
 }
+
+
 .dot {
     background: black;
     width: 10px;

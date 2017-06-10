@@ -24,8 +24,8 @@ component("graph", {
 
           //Testing how to modify json
           aux[0].label = "TaskModified";
-          console.log(aux[0].label);
-          //debugger
+          //console.log(aux[0].label);
+  
           self.data = aux; //JSON.stringify(aux);
           ///
           self.data = data;
@@ -43,7 +43,7 @@ component("graph", {
             // Find Maximum X Axis Value
             if (self.data[i].total > self.max)
               self.max = self.data[i].total;
-            console.log("max: " + self.max);
+
           }
 
           //console.log("max: " + self.max);

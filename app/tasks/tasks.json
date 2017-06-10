@@ -43,8 +43,8 @@
   },
   {
     "label": "Task4",
-    "total": 182,
-    "current": 160,
+    "total": 300,
+    "current": 200,
     "imageUrl": "images/yeoman.png",
     "milestones":
     [
