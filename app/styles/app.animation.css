@@ -1,7 +1,7 @@
 ﻿/*Starting with width 0, thead movement isindex made increasing thead width*/
-@keyframes slidein { 
+@keyframes slidein {
     from {
-        margin-left: 0%;
+        /*margin-left: 0%;*/
         width: 0%;
     }
 

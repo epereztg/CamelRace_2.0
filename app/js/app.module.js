@@ -30,6 +30,9 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       templateUrl: 'bar-detail/item-detail.template.html',
       controller: 'ItemDetailController as itemDetail',
       resolve: {
+         itemId: ['$stateParams', 'TasksService',
+           function($stateParams){return $stateParams.itemId},
+         ],
         item: ['$stateParams', 'TasksService',
           function($stateParams, TasksService) {
             var items;

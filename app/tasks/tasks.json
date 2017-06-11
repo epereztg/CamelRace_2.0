@@ -113,11 +113,11 @@
     "current": 140,
     "milestones":
     [
-      { "date": "20170503", "complete": "2" },
-      { "date": "20170503", "complete": "4" },
-      { "date": "20170503", "complete": "6" },
-      { "date": "20170503", "complete": "8" },
-      { "date": "20170503", "complete": "10" }
+      { "date": "20170503", "complete": "20" },
+      { "date": "20170503", "complete": "40" },
+      { "date": "20170503", "complete": "60" },
+      { "date": "20170503", "complete": "80" },
+      { "date": "20170503", "complete": "150" }
     ]
   },
   {

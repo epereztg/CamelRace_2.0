@@ -6,25 +6,29 @@
     .controller('ItemDetailController', ItemDetailController);
 
   // 'item' is injected through state's resolve
-  ItemDetailController.$inject = ['item']
+  ItemDetailController.$inject = ['item', 'itemId', 'TasksService']
 
-  function ItemDetailController(item) {
+  function ItemDetailController($scope, itemId, TasksService) {
 
     var itemDetail = this;
+    //$scope.id = $stateParams.itemID;
     //itemDetail.name = item;
-    itemDetail.label = item.label;
-    itemDetail.total = item.total;
-    itemDetail.current = item.current;
+    itemDetail.label = $scope.label;
+    itemDetail.total = $scope.total;
+    itemDetail.current = $scope.current;
+    itemDetail.itemId = itemId;
 
-    // save(): function() {
-    //   console.log("Hi");
-    // };
+
+    itemDetail.getSomeItem = function(itemId) {
+      //Op2
+      var itemNew= TasksService.getSomeItem(itemId);
+      
+      /////itemDetail.label =  JSON.stringify(itemNew);
+      //Op1
+      // TasksService.getSomeItem()
+      //   .then(function(data) {
+      //     itemDetail.label =  JSON.stringify(data);
+      //   });
+    }
   };
-  // self.setImage = function setImage(imageUrl) {
-  //   // self.setImage = function setImage() {
-  //   //   self.mainImageUrl = "images/walkingCamel.gif";
-  //   // };
-  //   console.log("Hi");
-  //
-  //
 })();
