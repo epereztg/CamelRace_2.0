@@ -29,7 +29,7 @@
 // });
 'use strict';
 
-describe('service under test', function() {
+describe('Factory: TasksService', function() {
   var myService = null;
 
   beforeEach(module('core.services'));
@@ -42,14 +42,32 @@ describe('service under test', function() {
 
   //Tasksservice
   it('can get an instance', inject(function(TasksService) {
+
     expect(TasksService).toBeDefined();
+
   }));
   //
   // //
   it('should do something cool', function() {
     //var items = myService.fakeArray(); //testing array of 3 elements
-    var items = myService.fakeJson();
-    expect(items.length).toBe(2);
+    console.log("AAAAAAAAAAA");
+    console.log(myService.getList()
+      .then(function(items) {
+        console.log(items);
+        //        expect(items.length).toBe(132152413);
+
+        //return items[$stateParams.itemId];
+      })
+    );
+    myService.getList()
+      .then(function(items) {
+        console.log(items);
+        //        expect(items.length).toBe(132152413);
+        expect(items).toContain('Task1');
+        //return items[$stateParams.itemId];
+      });
+    console.log("BBBBBBBBBBBN");
+
   });
 
   //Example
