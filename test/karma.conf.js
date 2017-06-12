@@ -37,19 +37,17 @@ module.exports = function(config) {
       'app/services/task.service.js',
 
       'app/components/components.module.js',
-      'app/graph/graph.component.js',
-      'app/bar-list/bar-list.component.js',
-      'app/bar-detail/item-detail.component.js',
-
-      'bower_components/angular-ui-router/release/angular-ui-router.js',
+      'app/components/graph.component.js',
+      'app/components/bar-list.component.js',
+      'app/components/item-detail.component.js',
 
       'app/services/services.module.js',
       'app/services/task.service.js',
 
       'app/components/components.module.js',
-      'app/graph/graph.component.js',
-      'app/bar-list/bar-list.component.js',
-      'app/bar-detail/item-detail.component.js',
+      'app/components/graph.component.js',
+      'app/components/bar-list.component.js',
+      'app/components/item-detail.component.js',
 
 
       'app/js/app.module.js',

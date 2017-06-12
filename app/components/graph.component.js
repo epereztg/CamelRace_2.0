@@ -11,7 +11,7 @@ component("graph", {
     xAxis: '@'
   },
 
-  templateUrl: 'graph/graph.template.html',
+  templateUrl: 'views/graph.template.html',
 
   controller: ['$http', 'TasksService', function graphController($http, TasksService) {
     var self = this;

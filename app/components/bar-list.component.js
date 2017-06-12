@@ -11,7 +11,7 @@ component("barList", {
     max: '=',
     data: '='
   },
-  templateUrl: 'bar-list/bar-list.template.html',
+  templateUrl: 'views/bar-list.template.html',
   controller: ['$http', function barListController($http) {
     var self = this;
     self.image = '../images/walkingCamel.gif';

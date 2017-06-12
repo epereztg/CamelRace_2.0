@@ -22,17 +22,19 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'home/home.template.html'
+      templateUrl: 'views/home.template.html'
     })
 
     .state('itemDetail', {
       url: '/item-detail/{itemId}',
-      templateUrl: 'bar-detail/item-detail.template.html',
+      templateUrl: 'views/item-detail.template.html',
       controller: 'ItemDetailController as itemDetail',
       resolve: {
-         itemId: ['$stateParams', 'TasksService',
-           function($stateParams){return $stateParams.itemId},
-         ],
+        itemId: ['$stateParams', 'TasksService',
+          function($stateParams) {
+            return $stateParams.itemId
+          },
+        ],
         item: ['$stateParams', 'TasksService',
           function($stateParams, TasksService) {
             var items;
