@@ -31,7 +31,6 @@ module.exports = function(config) {
       'bower_components/angular-aria/angular-aria.js',
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/angular-messages/angular-messages.js',
-      //'bower_components/angular-ui-router/release/ui-router-angularjs.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
 
       'app/services/services.module.js',
@@ -42,11 +41,12 @@ module.exports = function(config) {
       'app/bar-list/bar-list.component.js',
       'app/bar-detail/item-detail.component.js',
 
+
       'app/js/app.module.js',
       'app/**/*.js',
       // 'app/scripts/*.js',
       // 'app/scripts/**/*.js',
-      'test/mock/**/*.js',
+      // 'test/mock/**/*.js',
       'test/spec/**/*.js'
     ],
 
