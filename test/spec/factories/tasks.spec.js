@@ -30,26 +30,6 @@ describe('Factory: TasksService', function() {
     expect(responseData.length).toBe(12);
     console.log("BBBBBBBBBBBN");
 
-    );
-    myService.getList()
-      .then(function(items) {
-        console.log(items);
-        //        expect(items.length).toBe(132152413);
-        expect(items).toContain('Task1');
-        //return items[$stateParams.itemId];
-      });
-    console.log("BBBBBBBBBBBN");
-
-
-    // var items = myService.getItems();
-    // expect(items.length).toBe(2);
-    myService.getList()
-      .then(function(items) {
-        console.log(items.length);
-        expect(items.length).toBe(132152413);
-        //return items[$stateParams.itemId];
-      });
-
   });
 
 });
