@@ -7,8 +7,8 @@ component("graph", {
   bindings: {
     width: '=',
     height: '=',
-     yAxis:  '@',
-  xAxis: '@'
+    yAxis: '@',
+    xAxis: '@'
   },
 
   templateUrl: 'graph/graph.template.html',
@@ -18,20 +18,10 @@ component("graph", {
     $http.get('tasks/tasks.json').then(function(response) {
       TasksService.getList()
         .then(function(data) {
-          // //console.log(JSON.stringify(data));
-          // var aux = JSON.parse(JSON.stringify(data));
-          // //var aux = JSON.stringify(data);
-          //
-          // //Testing how to modify json
-          // aux[0].label = "TaskModified";
-          // //console.log(aux[0].label);
-          //
-          // self.data = aux; //JSON.stringify(aux);
-          ///
+
           self.data = data;
           self.max = 0;
           var arrLength = self.data.length;
-
 
           // "Arrow functions" are not supported by PhantomJS 2.x
           // PhantomJS only supports a small subset of ES6.

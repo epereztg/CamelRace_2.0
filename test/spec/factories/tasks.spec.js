@@ -31,44 +31,29 @@
 
 describe('Factory: TasksService', function() {
   var myService = null;
+  var responseData = null;
+  var items = null;
 
   beforeEach(module('core.services'));
   //
   beforeEach(inject(function(_TasksService_) {
     myService = _TasksService_;
-
   }));
   //});
 
   //Tasksservice
   it('can get an instance', inject(function(TasksService) {
-
     expect(TasksService).toBeDefined();
-
   }));
   //
-  // //
-  it('should do something cool', function() {
-    //var items = myService.fakeArray(); //testing array of 3 elements
+  it('should return 12 items', function() {
     console.log("AAAAAAAAAAA");
-    console.log(myService.getList()
-      .then(function(items) {
-        console.log(items);
-        console.log("BBBBBBBBBBBN");
-        //        expect(items.length).toBe(132152413);
-
-        //return items[$stateParams.itemId];
-      })
-    );
     myService.getList()
       .then(function(items) {
-        console.log("VVCCCCCCCCC");
-        console.log(items);
-
-        //        expect(items.length).toBe(132152413);
-        expect(items).toContain('Task1');
-        //return items[$stateParams.itemId];
+        responseData = items;
       });
+    console.log(items);
+    expect(responseData.length).toBe(12);
     console.log("BBBBBBBBBBBN");
 
   });
@@ -81,17 +66,7 @@ describe('Factory: TasksService', function() {
   //     TasksService = $injector.get('TasksService');
   //   });
   // });
-  // it('should return all items', function() {
-  //
-  // var items = TasksService.getItems();
-  //
-  // console.log(TasksService);
-  // //expect(items[0].label).toContain('Task1');
-  // // expect(items).toContain('Task1');
-  // // expect(items).toContain('book');
-  // // expect(items).toContain('pen');
-  // expect(items.length).toEqual(3);
-  // });
+
 
 
 
