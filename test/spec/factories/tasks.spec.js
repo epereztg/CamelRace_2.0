@@ -1,32 +1,3 @@
-// 'use strict';
-//
-// describe('Factory: TasksService', function() {
-//
-//   // load the controller's module
-//   beforeEach(function() {
-//     console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-//   })
-//   // beforeEach(module('app', ['TasksService']));
-//   beforeEach(module('app'));
-//
-//   var TasksValidationService;
-//
-//   beforeEach(inject(function() {
-//     var $injector = angular.injector(['app']);
-//     TasksValidationService = $injector.get('TasksService');
-//   }));
-//
-//   it('My TasksService works!!', function() {
-//     var output = TasksValidationService.list(); //OfficerValidationService.something();
-//     expect(output.length).toBe(12);
-//     //expect(output).toBeTruthy();
-//   });
-//
-//
-//   // it('Esto es un test idiota', function() {
-//   //   expect(output.length).toBe(12);
-//   // });
-// });
 'use strict';
 
 describe('Factory: TasksService', function() {
@@ -35,17 +6,20 @@ describe('Factory: TasksService', function() {
   var items = null;
 
   beforeEach(module('core.services'));
-  //
+
   beforeEach(inject(function(_TasksService_) {
     myService = _TasksService_;
   }));
   //});
-
+  //Example
+  var TasksService;
   //Tasksservice
   it('can get an instance', inject(function(TasksService) {
+
     expect(TasksService).toBeDefined();
+
   }));
-  //
+
   it('should return 12 items', function() {
     console.log("AAAAAAAAAAA");
     myService.getList()
@@ -56,18 +30,26 @@ describe('Factory: TasksService', function() {
     expect(responseData.length).toBe(12);
     console.log("BBBBBBBBBBBN");
 
+    );
+    myService.getList()
+      .then(function(items) {
+        console.log(items);
+        //        expect(items.length).toBe(132152413);
+        expect(items).toContain('Task1');
+        //return items[$stateParams.itemId];
+      });
+    console.log("BBBBBBBBBBBN");
+
+
+    // var items = myService.getItems();
+    // expect(items.length).toBe(2);
+    myService.getList()
+      .then(function(items) {
+        console.log(items.length);
+        expect(items.length).toBe(132152413);
+        //return items[$stateParams.itemId];
+      });
+
   });
-
-  //Example
-  var TasksService;
-  // beforeEach(function() {
-  //   module('app');
-  //   inject(function($injector) {
-  //     TasksService = $injector.get('TasksService');
-  //   });
-  // });
-
-
-
 
 });
