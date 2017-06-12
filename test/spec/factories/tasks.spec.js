@@ -54,6 +54,7 @@ describe('Factory: TasksService', function() {
     console.log(myService.getList()
       .then(function(items) {
         console.log(items);
+        console.log("BBBBBBBBBBBN");
         //        expect(items.length).toBe(132152413);
 
         //return items[$stateParams.itemId];
@@ -61,7 +62,9 @@ describe('Factory: TasksService', function() {
     );
     myService.getList()
       .then(function(items) {
+        console.log("VVCCCCCCCCC");
         console.log(items);
+
         //        expect(items.length).toBe(132152413);
         expect(items).toContain('Task1');
         //return items[$stateParams.itemId];
